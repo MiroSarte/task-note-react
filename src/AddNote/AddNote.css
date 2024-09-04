@@ -1,0 +1,104 @@
+.add-note-container{
+    position: absolute;
+    background-color: var(--light-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30em;
+    z-index: 1;
+    width: 40em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.notes-option{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap:1em;
+}
+.close-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size:2em;
+    margin: 2px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: red;
+}
+.button-save-container{
+    display: flex;
+    align-items: center;
+}
+.button-save-container > button{
+    height: 3em;
+    width: 8em;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--color1);
+    color: var(--light-color);
+    justify-self: flex-end;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1em;
+}
+ .button-save-container > button:hover{
+    background-color: var(--color);
+}
+.notes-option > button:active{
+    background-color: var(--color2);
+}
+
+
+.color-option {
+    height: 3em;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.color-option > .select-color{
+    font-weight: bold;
+}
+.color-option > .color {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lightgray{
+  background-color: #d5d5d5;
+}
+.skyblue{
+  background-color: #00d9fa;
+}
+.cherry{
+  background-color: #f88282;
+}
+.green{
+  background-color: #7af60e;
+}
+.violet{
+  background-color: #ff00fb;
+}
+.selected-color-add{
+   border: solid 2px ;
+}
+
+.input-note-text{
+    width: 100%;
+    height: 26em;
+    padding: 1em;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+    resize: none;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    border-bottom: solid 1px #d5d5d5;
+    border-top: solid 1px #d5d5d5;
+}
+
+

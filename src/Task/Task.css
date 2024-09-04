@@ -1,0 +1,138 @@
+
+
+.today-task-container{
+    height: 50vh;
+    width: 75vw;
+    margin: auto;
+    background-color: var(--light-color);
+    margin-top: 4em;
+    border-radius: 8px;
+    font-size:8px;
+    padding: 1em;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+.hidden {
+    display: none;
+}
+
+.task-header-container{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-bottom: solid var(--background-color) 2px;
+}
+
+.task-header-container>span{
+    text-align: center;
+}
+
+.task-header-container>.task-name{
+    width: calc(100%/2);
+}
+.task-header-container>.task-priority, .task-label, .task-schedule{
+    width: calc(100%/4);
+    text-align: center;
+}
+.header-remove{
+    width: calc(100%/6);
+    text-align: center;
+}
+
+
+
+.taskItem{
+    height: 3em;
+    width: 100%;
+    list-style: none;
+    margin-top: 1em;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.taskItem>.name{
+    width: calc(100%/2);
+    background-color: var(--background-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.taskItem>.name>span{
+    display: flex;
+    align-items: center;
+}
+.taskItem> .name> .checkbox-wrapper{
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    align-items: center;
+    margin-left: 1em;
+    height: 24px;
+    width: 24px;    
+}
+
+.checkbox-wrapper input{
+    position:absolute;
+    opacity: 0;
+    cursor: pointer;
+ 
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    border: solid var(--background-color);
+}
+  .checkmark > .check{
+    position: absolute;
+    font-size: 1.5em;
+    color: var(--light-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .checkbox-wrapper input:checked ~ .checkmark{
+    background-color: var(--color);
+    border: solid var(--light-color) 1px;
+  }
+
+
+.checkbox-wrapper input:checked ~ .checkmark:after{display: block;}
+
+.taskItem>.name>.text{
+    flex-grow: 1;
+    justify-content: center;
+}
+.taskItem>.priority, .label, .schedule {
+    width: calc(100%/4);
+    text-align: center;
+}
+.delete{
+    width: calc(100%/6);
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete:hover{
+    color: red;
+}
+
+.completed-list > .taskItem > .name > .text{
+   text-decoration:line-through;
+}
+
+

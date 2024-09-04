@@ -1,0 +1,40 @@
+:root{
+  --color:#24177c; 
+  --color1:#0B1464;
+   --color2:#110752;
+   --background-color:#EDEDED;
+
+   --light-color: #ffffff;
+   --font-size-s: 1.0em;
+   --font-size-m: 2em;
+   --font-size-l: 2.5em;
+   --font-size-xl: 4.5em;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Poppins", sans-serif;;
+}
+
+.activeNav, .showAddNote, .showEditNote{
+  display: block;
+}
+.inactiveNav, .hideAddNote, .hideEditNote{
+  display: none;
+}
+
+.root-container{
+  display: flex;
+
+}
+.container{
+    height: 100vh;
+    width: 90vw;
+    background-color: var(--background-color);
+    position: relative;
+    margin-top: 0;
+
+}
+
+

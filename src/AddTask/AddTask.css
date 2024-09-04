@@ -1,0 +1,220 @@
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
+}
+.add-task-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 350px;
+    background-color: var(--light-color);
+    font-size: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2em;
+}
+
+.select-schedule-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.select-schedule-wrapper{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    margin-top: 1em;
+    justify-content: center;
+}
+h2{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.date-container{
+    width: 40%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    border: solid 1px;
+    position: relative;
+    border-radius: 8px;
+}
+.date-display{
+   font-size: 1.5em;
+   letter-spacing: .5em;
+   flex-grow: 2;
+   text-align: center;
+}
+.calendar{
+    font-size: 3em;
+}
+.date-input{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+.date-input::-webkit-calendar-picker-indicator{
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.time-container{
+    height: 6em;
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 1em;
+}
+.colon{
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+  
+}
+
+.hours-wrapper, .minutes-wrapper{
+    position: relative;
+    width: 6em;
+    height: 6em;
+}
+.hours, .minutes{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2em;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    border: none;
+    outline: none;
+    background-color: var(--background-color);
+}
+
+input.hours::-webkit-outer-spin-button,
+input.hours::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input.minutes::-webkit-outer-spin-button,
+input.minutes::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.meridiem{
+    outline: none;
+    cursor: pointer;
+}
+
+.task-container, .priority-container, .label-container{
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.task-container > .input-task{
+    width: 80%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    outline: none;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-left: auto;
+}
+.task-container > .input-task > input[type=text]{
+    height: 2em;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.priority-wrapper{
+    height: 4em;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-left: auto;
+ }
+ .priority-wrapper > label{
+    font-size: 1.5em;
+    letter-spacing: 3px;
+ }
+ 
+.label-wrapper{
+    height: 4em;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-left: auto;
+ }
+ .label-wrapper > label{
+    font-size: 1.5em;
+    letter-spacing: 3px;
+ }
+input{
+    margin-right: 1em;
+    cursor: pointer;
+ }
+ .buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+ }
+ .buttons-container > button{
+    height: 3em;
+    width: 10em;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--light-color);
+    border-radius: 8px;
+    border: none;
+ }
+ .buttons-cancel{
+    background-color: #f64510;
+ }
+ .buttons-cancel:hover{
+    background-color: #f94d18;
+ }
+ .buttons-cancel:active{
+    background-color: #cb370a;
+ }
+
+ .buttons-add{
+    background-color: #2ff610;
+ }
+ .buttons-add:hover{
+    background-color: #29f20a;
+ }
+ .buttons-add:active{
+    background-color: #27cd0d;
+ }
+

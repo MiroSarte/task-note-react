@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navigation-container{
+    height: 100vh;
+    width: 250px;
+    background-color: var(--color1);
+    padding: 1em;
+    color: var(--light-color);
+    font-size: 8px;
+    text-align: center;
+}
+
+.active{
+    background-color:var(--color);
+    border-radius: 8px;
+}
+.activeTaskFilter{
+  background-color:var(--color);
+  border-radius: 8px;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+h1.app-header{
+    font-size: var(--font-size-l);
+    margin-top: 1em;
+  }
+
+  .navigation-wrapper{
+   height: 85%;
+   width: 100%;
+   background-color: var(--color2);
+   margin-top: 1em;
+   font-size: 1em;
+  }
+
+  .profile-user-container{
+    height: 30%;
+    width: 100%;
+    border-bottom: solid var(--font-color) 1px;
+    text-align: center;
+    background-color: var(--color);
+    border-radius: 8px 8px 0 0;
+  }
+  .users-name{
+    margin-top: 1em;
+    font-size: var(--font-size-m);
+  }
+  img.profile{
+    height: 9em;
+    width: 9em;
+    margin-top: 5em;
+    border-radius: 50%;
+  }
+
+  .nav-list{
+    height: 70%;
+    padding: 2em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-list > li {
+    cursor: pointer;
+    display: flex;
+    margin-top: 1em;
+    font-size: var(--font-size-m);
+    transition: 200ms;
+  }
+  .nav-list > li:hover {
+      background-color:var(--color1);
+      border-radius: 8px;
+  }
+
+  .nav-list > li > span.li-icons{
+    display: flex;
+    margin-right:1em;
+    width: fit-content;
+    align-items: center;
+   
+  }
+
+  .nav-list > li.nav-setting {
+    margin-top: auto;
+  }
+
+
+  .task-category{
+    padding: 0 2em 0 2em;
+  }
+  .task-category > li{
+    height: 2.5em;
+    font-size: 1.5em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: .5em;
+  }
+  .task-category > li:hover{
+    background-color: var(--color1);
+    border-radius: 8px;
+  }
+footer{
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}

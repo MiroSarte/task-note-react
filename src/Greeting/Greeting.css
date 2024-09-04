@@ -1,0 +1,22 @@
+.greeting-container{
+    height: 20vh;
+    width: 75vw;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 3em;
+    background-image: linear-gradient(to right, var(--color) 0%, var(--color2) 100%);
+    color: var(--light-color);
+    font-size: 8px;
+    padding: 2em;
+}
+
+p.greeting{
+    font-size: var(--font-size-xl);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+p.message{
+    font-size: var(--font-size-l);
+    letter-spacing: 2px;
+    font-weight: 300;
+}
